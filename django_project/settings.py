@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pages',
     'crispy_forms',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -131,4 +132,5 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_REDIRECT_URL = "/"  # new
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home"
