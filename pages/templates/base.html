@@ -1,17 +1,27 @@
 <!-- templates/base.html -->
 <!DOCTYPE html>
 <html>
-
+{% load static %}
 <head>
   <meta charset="utf-8">
   <title>{% block title %}Django Auth Tutorial{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'first.css' %}">
 </head>
 
 <body>
+
+  <ul>
+    <li><a href="default.asp">Home</a></li>
+    <li><a href="news.asp">News</a></li>
+    <li><a href="contact.asp">Contact</a></li>
+    <li style="float:right"><a href="about.asp">About</a></li>
+  </ul>
+
   <main>
-    {% block content %}
-    {% endblock %}
+      {% block content %}
+      {% endblock %}
   </main>
+
 </body>
 
 </html>
